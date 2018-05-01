@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/logging/logging_{{ version }}.tar.gz
   sha256: aca8153206cc815a49470844c48f44f84e6d7a6ce52686a8593f727582c0e7ea
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
